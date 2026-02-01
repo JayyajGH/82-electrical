@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@import "./typography.css";
+
+:root {
+  --white: #FFF;
+  --black: #000;
+
+  --bg: #FFF;
+  --bg-secondary: #D3D3D3;
+  --bg-tertiary:  #D3D3D3;
+  --color: #70686b;
+  --color-primary: #3E3E3E;
+}
+
+/*
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --bg-secondary: #3E3C3C;
+    --bg-tertiary: #70686b;
+    --color: #FFF;
+    --color-primary: rgba(255, 255, 255, 0.87);
+  }
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 93.75em) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+/* NB: This will be hidden from view but still be available to screenreaders
+ http://webaim.org/techniques/css/invisiblecontent/ */
+.uHiddenVisually {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden;
+}
+
+/* Padding */
+.u-padding--small {
+  padding: 0.5rem !important;
+}
+
+.u-padding--medium {
+  padding: 1rem !important;
+}
+
+.u-padding--large {
+  padding: 2rem !important;
+}
+
+/* Margins */
+.u-margin-bottom--small {
+  margin-bottom: 0.5rem !important;
+}
+
+.u-margin-bottom--medium {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom--large {
+  margin-bottom: 3rem !important;
+}
+
+
+/* In a typography file */
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.heading1 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 50em) {
+  .heading1 {
+    font-size: 2rem;
+  }
+}
+
+.heading2 {
+  font-size: 1.777rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}

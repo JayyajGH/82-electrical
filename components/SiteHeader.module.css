@@ -1,0 +1,108 @@
+/* Header.module.css */
+
+.headerWrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Combines the old logo__container and logo__wrapper logic */
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem; /* Reduced from 150px for better mobile responsiveness */
+  padding: 5px;
+  
+  @media (min-width: 50em) {
+    gap: 150px;
+  }
+}
+
+.hero {
+  position: relative; /* Needed for the absolute positioned heading */
+  background-image: url('/images/masthead.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 50em) {
+    min-height: 400px;
+    background-image: url('/images/masthead-large.jpg');
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+.heroTitle {
+  /* Using 'heroTitle' instead of 'main-heading' for CamelCase consistency */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Centers vertically within the hero */
+  left: 5%;
+  color: var(--white);
+  font-size: clamp(2rem, 8vw, 5rem); /* Responsive font size */
+}
+
+.siteNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.logoLink {
+  display: inline-flex;
+}
+
+.logoImage {
+  border-radius: 3px;
+  background: url('/images/logo-horizontal.jpg') no-repeat center / contain;
+  min-width: 175px;
+  min-height: 80px;
+
+  @media (min-width: 50em) {  
+    min-width: 250px;
+    min-height: 115px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-image: url('/images/logo-horizontal-dark.jpg');
+  }
+}
+
+.menuList {
+  display: flex;
+  margin: 0 auto;
+  gap: 1rem;
+  list-style: none;
+
+  @media (min-width: 50em) {
+    gap: 3rem;
+  }
+}
+
+.navLink {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: var(--color);
+
+  @media (min-width: 50em) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    color: var(--black);
+  }
+}
+
+.skipLink:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}

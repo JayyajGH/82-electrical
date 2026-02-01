@@ -1,0 +1,60 @@
+.coverageMap {
+  width: 100%; /* Make it responsive by default */
+  max-width: 325px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  @media (min-width: 30em) {
+    max-width: 450px;
+  }
+
+  @media (min-width: 50em) {
+    max-width: 600px;
+    aspect-ratio: 4 / 3; /* Shifting to a wider view on desktop */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: brightness(0.8) contrast(1.2);
+  }
+}
+
+.contactContainer {
+  margin-bottom: 20px;
+}
+
+.contactItem {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.contactLink {
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  /* Shared Icon Logic */
+  &:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    display: inline-flex;
+    margin-right: 15px;
+    flex-shrink: 0; /* Prevents icon from squishing if text wraps */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    @media (prefers-color-scheme: dark) {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+    }
+  }
+}
+
+/* Specific Icon Backgrounds */
+.emailLink:before { background-image: url('/images/email.svg'); }
+.phoneLink:before { background-image: url('/images/phone.svg'); }
+.addressLink:before { background-image: url('/images/address.svg'); }

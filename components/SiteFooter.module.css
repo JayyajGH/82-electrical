@@ -1,0 +1,87 @@
+/* Footer.module.css */
+
+.footerContainer {
+  background-color: var(--bg-secondary);
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Handles spacing without needing width math */
+  padding: 2rem 1rem;
+  color: var(--black);
+
+  @media (min-width: 50em) {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+}
+
+.heading {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.contactSection {
+  flex: 1 1 100%; /* Full width on mobile */
+  order: -2;
+
+  @media (min-width: 50em) {
+    flex: 1 1 50%; /* Takes up roughly half on desktop */
+  }
+}
+
+.socialSection {
+  flex: 1 1 100%;
+
+  @media (min-width: 50em) {
+    flex: 0 1 30%;
+  }
+}
+
+.backToTopText {
+  display: block;
+  margin-top: 1.5rem; /* Replaces 'position: relative; top: 23px' for better flow */
+}
+
+.socialList {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: opacity 0.2s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/* Specific Logo Backgrounds */
+.facebook { background-image: url('/images/facebook-logo.svg'); }
+.instagram { background-image: url('/images/instagram-logo.svg'); }
+.google { background-image: url('/images/google-logo.svg'); }
+
+.copyright {
+  width: 100%;
+  color: var(--color-primary);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contactLink {
+  color: var(--color-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

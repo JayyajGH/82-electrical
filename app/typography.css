@@ -1,0 +1,44 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.heading1 {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 50em) {
+  .heading1 {
+    font-size: 2rem;
+  }
+}
+
+.heading2 {
+  font-size: 1.777rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.body--bold {
+  font-weight: 700;
+}
+
+.body--bold-light {
+  font-weight: 600;
+}
+
+.small-text {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.smallest-text {
+  font-size: 0.75rem;
+  margin-bottom: 0.5rem;
+}

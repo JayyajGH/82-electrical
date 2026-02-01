@@ -1,0 +1,45 @@
+/* WhatWeDo.module.css */
+
+.centeredText {
+  text-align: center;
+}
+
+.sectionHeading {
+  text-align: center;
+
+  &:before {
+    content: url('/images/bolt.svg');
+    padding-right: 10px;
+  }
+}
+
+.serviceList {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 50em) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.serviceItem {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemIcon {
+  width: 75px;
+
+  @media (min-width: 50em) {
+    width: 100px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+  }
+}
