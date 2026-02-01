@@ -5,7 +5,7 @@
 .footerContent {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Handles spacing without needing width math */
+  gap: 2rem;
   padding: 2rem 1rem;
   color: var(--black);
 
@@ -39,7 +39,7 @@
 
 .backToTopText {
   display: block;
-  margin-top: 1.5rem; /* Replaces 'position: relative; top: 23px' for better flow */
+  margin-top: 1.5rem;
 }
 
 .socialList {
