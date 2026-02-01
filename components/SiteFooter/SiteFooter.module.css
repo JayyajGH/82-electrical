@@ -49,25 +49,6 @@
   padding: 0;
 }
 
-.socialIcon {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  transition: opacity 0.2s ease;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &:hover {
-    opacity: 0.7;
-  }
-}
-
-/* Specific Logo Backgrounds */
-.facebook { background-image: url('/images/facebook-logo.svg'); }
-.instagram { background-image: url('/images/instagram-logo.svg'); }
-.google { background-image: url('/images/google-logo.svg'); }
-
 .copyright {
   width: 100%;
   color: var(--color-primary);

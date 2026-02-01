@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { PT_Sans } from "next/font/google";
 import "./globals.css";
-import SiteHeader from '@/components/SiteHeader';
-import SiteFooter from '@/components/SiteFooter';
+import SiteHeader from '@/components/SiteHeader/SiteHeader';
+import SiteFooter from '@/components/SiteFooter/SiteFooter';
 
 const ptSans = PT_Sans({
   subsets: ['latin'],
