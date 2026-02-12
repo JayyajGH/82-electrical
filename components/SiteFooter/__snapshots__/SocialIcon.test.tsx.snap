@@ -1,0 +1,14 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SocialIcon Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <a
+    aria-label="facebook"
+    class="_socialIcon_5094b7 _facebook_5094b7"
+    href="https://facebook.com/test"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="82Electrical on facebook"
+  />
+</DocumentFragment>
+`;
