@@ -19,12 +19,12 @@ export default function SiteFooter() {
       <div className={`${styles.footerContent} wrapper`}>
         
         {/* Contact Information */}
-        <div className={`${styles.contactSection} uMarginBottomMedium`}>
+        <div className={`${styles.contactSection} mb-6`}>
           <h2 className={`${styles.heading} heading2`}>Contact Us</h2>
           <address>
             <ul className="listReset">
               {CONTACT_DETAILS.map((item) => (
-                <li key={item.label} className="uMarginBottomSmall">
+                <li key={item.label} className="mb-2">
                   <a 
                     className={styles.contactLink} 
                     href={item.href}
@@ -40,7 +40,7 @@ export default function SiteFooter() {
         </div>
 
         {/* Social Media Links */}
-        <div className={`${styles.socialSection} uMarginBottomMedium`}>
+        <div className={`${styles.socialSection} mb-6`}>
           <h2 className={`${styles.heading} heading2`}>Social</h2>
           <address>
             <ul className={styles.socialList}>

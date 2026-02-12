@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function SiteHeader() {
   return (
-    <header className="uMarginBottomMedium" id="header">
+    <header className="mb-6" id="header">
       {/* Skip Link for Accessibility */}
       <a href="#main" className={`uHiddenVisually ${styles.skipLink}`}>
         Skip to main content

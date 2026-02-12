@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
       <main className="wrapper">
-      <section className="u-margin-bottom--large">
+      <section className="mb-12">
         <h2 className={`${styles.sectionHeading} heading1`}>About us</h2>
         <div className={styles.centeredText}>
           <p className={styles.aboutText}>Offering domestic electrical services for Bristol and surrounding areas. From it's beginnings
@@ -23,7 +23,7 @@ export default function Home() {
           <p>Many thanks for stopping by and we look forward to hearing from you soon.</p>
         </div>
       </section>
-      <section className="u-margin-bottom--large">
+      <section className="mb-12">
         <h2 className={`${styles.sectionHeading} heading1`}>What we do</h2>
         <ul className={styles.serviceList}>
           <li className={styles.serviceItem}>
