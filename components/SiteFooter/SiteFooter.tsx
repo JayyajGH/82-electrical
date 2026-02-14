@@ -13,7 +13,10 @@ const SOCIAL_LINKS = [
   { platform: 'instagram', path: 'https://instagram.com/ElectricianforBristol' },
 ];
 
-export default function SiteFooter() {
+// Define an empty interface for now
+export interface SiteFooterProps {}
+
+export default function SiteFooter({}: SiteFooterProps) {
   return (
     <footer className={styles.footerContainer} id="contact">
       <div className={`${styles.footerContent} wrapper`}>
