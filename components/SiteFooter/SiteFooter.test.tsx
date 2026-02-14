@@ -52,7 +52,7 @@ describe('SiteFooter Component', () => {
     // We check for the presence of the expected platforms
     expect(screen.getByLabelText(/facebook/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/google/i)).toBeInTheDocument();
-    expect(screen.getByLabelText(/instagram/i)).toBeInTheDocument();
+    //expect(screen.getByLabelText(/instagram/i)).toBeInTheDocument();
   });
 
   it('matches snapshot', () => {

@@ -89,16 +89,6 @@ exports[`SiteFooter Component > matches snapshot 1`] = `
                 title="82Electrical on google"
               />
             </li>
-            <li>
-              <a
-                aria-label="instagram"
-                class="_socialIcon_5094b7 _instagram_5094b7"
-                href="https://instagram.com/ElectricianforBristol"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="82Electrical on instagram"
-              />
-            </li>
           </ul>
         </address>
       </div>

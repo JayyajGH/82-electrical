@@ -10,7 +10,7 @@ const CONTACT_DETAILS = [
 const SOCIAL_LINKS = [
   { platform: 'facebook', path: 'https://www.facebook.com/ElectricianforBristol' },
   { platform: 'google', path: 'https://g.co/kgs/8yUWFXC' },
-  { platform: 'instagram', path: 'https://instagram.com/ElectricianforBristol' },
+  //{ platform: 'instagram', path: 'https://instagram.com/ElectricianforBristol' },
 ];
 
 // Define an empty interface for now
