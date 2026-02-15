@@ -35,7 +35,7 @@ export default function Home() {
               height={200}
             />
             <h2 className={`${styles.iconHeading} heading3`}>Rewires</h2>
-            <p>Whether an installation has reached the end of its life of is no longer fit for purpose a full rewire is sometimes necessary and we can help</p>
+            <p>Whether your current installation has reached the end of its life or is simply no longer fit for purpose, a full rewire is often the safest path forward and our team is here to help.</p>
           </li>
           <li className={styles.serviceItem}>
             <Image
@@ -46,7 +46,7 @@ export default function Home() {
               height={200}
             />
             <h2 className={`${styles.iconHeading} heading3`}>Fault finding</h2>
-            <p>Faults are a pain, so call us and we can start by giving advice over the phone, but if needed can often be there the same day to find a solution</p>
+            <p>Electrical faults are a major pain, so call us for immediate advice over the phone; if the issue persists, we can usually be there the same day to find a safe, permanent solution.</p>
           </li>
           <li className={styles.serviceItem}>
             <Image
