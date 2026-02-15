@@ -57,7 +57,7 @@ export default function Home() {
               height={200}
             />
             <h2 className={`${styles.iconHeading} heading3`}>Lighting</h2>
-            <p>Superb lighting installations, indoors and out</p>
+            <p>Whether you’re looking to brighten up a dark kitchen or transform your garden with outdoor LEDs, our superb installations ensure your space is perfectly lit and energy efficient.</p>
           </li>
         </ul>
       </section>
