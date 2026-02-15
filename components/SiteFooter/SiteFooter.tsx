@@ -22,7 +22,7 @@ export default function SiteFooter({}: SiteFooterProps) {
       <div className={`${styles.footerContent} wrapper`}>
         
         {/* Contact Information */}
-        <div className={`${styles.contactSection} mb-6`}>
+        <div className={styles.contactSection}>
           <h2 className={`${styles.heading} heading2`}>Contact Us</h2>
           <address>
             <ul className="listReset">
@@ -43,7 +43,7 @@ export default function SiteFooter({}: SiteFooterProps) {
         </div>
 
         {/* Social Media Links */}
-        <div className={`${styles.socialSection} mb-6`}>
+        <div className={styles.socialSection}>
           <h2 className={`${styles.heading} heading2`}>Social</h2>
           <address>
             <ul className={styles.socialList}>
