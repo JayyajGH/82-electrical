@@ -44,7 +44,7 @@ export default function Contact() {
           className={styles.coverageMap} 
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d318417.5185058974!2d-2.783116!3d51.428097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3c8324a225142f6!2s82%20electrical!5e0!3m2!1sen!2suk!4v1664028702117!5m2!1sen!2suk"
           style={{ border: 0 }} 
-          allowFullScreen="" 
+          allowFullScreen={true}
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
           title="Coverage Area Map"
