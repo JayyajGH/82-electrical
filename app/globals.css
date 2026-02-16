@@ -12,6 +12,14 @@
   --color-primary: #3E3E3E;
 }
 
+.dark {
+  --bg: #121212;
+  --bg-secondary: #3E3C3C;
+  --bg-tertiary: #70686b;
+  --color: #FFF;
+  --color-primary: rgba(255, 255, 255, 0.87);
+}
+
 /*
  Add theme into tailwind
 @theme inline {
@@ -21,14 +29,6 @@
   --font-mono: var(--font-geist-mono);
 }
 */
-
-.dark {
-  --bg: #121212;
-  --bg-secondary: #3E3C3C;
-  --bg-tertiary: #70686b;
-  --color: #FFF;
-  --color-primary: rgba(255, 255, 255, 0.87);
-}
 
  html {
   background-color: var(--bg);
