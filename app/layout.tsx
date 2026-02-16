@@ -3,11 +3,12 @@ import { PT_Sans } from "next/font/google";
 import "./globals.css";
 import SiteHeader from '@/components/SiteHeader/SiteHeader';
 import SiteFooter from '@/components/SiteFooter/SiteFooter';
+import { ThemeProvider } from "@/components/theme-provider";
 
 const ptSans = PT_Sans({
   subsets: ['latin'],
-  weight: ['400', '700'], // PT Sans comes in regular and bold
-  variable: '--font-pt-sans', // This creates a CSS variable
+  weight: ['400', '700'],
+  variable: '--font-pt-sans',
 });
 
 export const metadata: Metadata = {
@@ -21,13 +22,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${ptSans.variable} ${ptSans.className} antialiased`}
-      >
-        <SiteHeader></SiteHeader>
-        {children}
-        <SiteFooter></SiteFooter>
+    // suppressHydrationWarning is required on <html> when using next-themes
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${ptSans.variable} ${ptSans.className} antialiased`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </ThemeProvider>
       </body>
     </html>
   );

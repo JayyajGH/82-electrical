@@ -7,41 +7,44 @@
 .navContainer {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 2rem;
   padding: 5px;
   
   @media (min-width: 768px) {
     gap: 150px;
+    justify-content: flex-start;
   }
 }
 
 .hero {
-  position: relative; /* Needed for the absolute positioned heading */
+  position: relative;
   background-image: url('/images/masthead.jpg');
   background-size: cover;
   background-position: center;
   min-height: 200px;
   display: flex;
   align-items: center;
+  /* Smoothly transition the brightness filter */
+  transition: filter 0.3s ease;
 
   @media (min-width: 768px) {
     min-height: 300px;
     background-image: url('/images/masthead-large.jpg');
   }
 
-  @media (prefers-color-scheme: dark) {
-    filter: brightness(0.8) contrast(1.2);
+  :global(.dark) & {
+    filter: brightness(0.7) contrast(1.1);
   }
 }
 
 .heroTitle {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%); /* Centers vertically within the hero */
+  transform: translateY(-50%);
   left: 5%;
   color: var(--white);
-  font-size: clamp(2rem, 8vw, 5rem); /* Responsive font size */
+  font-size: clamp(2rem, 8vw, 5rem);
 }
 
 .siteNav {
@@ -49,6 +52,7 @@
   justify-content: space-between;
   padding: 0.5rem 1rem;
   background-color: var(--bg-secondary);
+  transition: background-color 0.3s ease;
 }
 
 .logoLink {
@@ -57,17 +61,14 @@
 
 .logoImage {
   border-radius: 3px;
-  background: url('/images/logo-horizontal.jpg') no-repeat center / contain;
+  background: url('/images/logo.png') no-repeat center / contain;
   min-width: 175px;
   min-height: 80px;
 
   @media (min-width: 768px) {  
+    background: url('/images/logo-horizontal.png') no-repeat center / contain;
     min-width: 250px;
     min-height: 115px;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    background-image: url('/images/logo-horizontal-dark.jpg');
   }
 }
 
@@ -94,6 +95,10 @@
 
   &:hover {
     color: var(--black);
+    
+    :global(.dark) & {
+      color: var(--white);
+    }
   }
 }
 
