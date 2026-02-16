@@ -13,6 +13,7 @@
 }
 
 /*
+ Add theme into tailwind
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
