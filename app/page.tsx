@@ -21,7 +21,7 @@ const CONTENT = {
     {
       title: "Lighting",
       icon: "/images/bulb.svg",
-      text: "Whether you’re looking to brighten up a dark kitchen or transform your garden with outdoor LEDs, our superb installations ensure your space is perfectly lit and energy efficient.",
+      text: "Whether you're looking to brighten up a dark kitchen or transform your garden with outdoor LEDs, our superb installations ensure your space is perfectly lit and energy efficient.",
     },
   ],
 };
