@@ -38,6 +38,10 @@
   margin-bottom: 20px;
 }
 
+.iconText {
+  text-align: center;
+}
+
 .itemIcon {
   width: 75px;
   margin-bottom: 20px;
