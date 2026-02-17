@@ -4,8 +4,23 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: 'jsdom', // This adds the 'document' object!
-    globals: true,       // Allows you to use 'describe' and 'it' without importing them
-    setupFiles: './vitest.setup.ts', // Optional: for custom matchers
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: './vitest.setup.ts',
+    coverage: {
+      provider: 'v8', 
+      reporter: ['text', 'html'],
+      include: ['**/*.{ts,tsx}'],
+      exclude: [
+        'node_modules/**',
+        'next.config.js',
+        'postcss.config.js',
+        'tailwind.config.js',
+        'vitest.setup.ts',
+        '**/.next/**',
+        'next-env.d.ts',
+        'next.config.ts',
+      ],
+    },
   },
 });
