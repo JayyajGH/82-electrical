@@ -10,7 +10,7 @@ exports[`SiteFooter Component > matches snapshot 1`] = `
       class="_footerContent_a3dc80 wrapper"
     >
       <div
-        class="_contactSection_a3dc80 mb-6"
+        class="_contactSection_a3dc80"
       >
         <h2
           class="_heading_a3dc80 heading2"
@@ -58,7 +58,7 @@ exports[`SiteFooter Component > matches snapshot 1`] = `
         </address>
       </div>
       <div
-        class="_socialSection_a3dc80 mb-6"
+        class="_socialSection_a3dc80"
       >
         <h2
           class="_heading_a3dc80 heading2"
@@ -73,7 +73,7 @@ exports[`SiteFooter Component > matches snapshot 1`] = `
               <a
                 aria-label="facebook"
                 class="_socialIcon_5094b7 _facebook_5094b7"
-                href="https://www.facebook.com/ElectricianforBristol"
+                href="https://www.facebook.com/profile.php?id=61555863644767"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="82Electrical on facebook"

@@ -20,6 +20,7 @@ export default defineConfig({
         '**/.next/**',
         'next-env.d.ts',
         'next.config.ts',
+        '**/components/theme-provider.tsx',
       ],
     },
   },
