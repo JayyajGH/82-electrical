@@ -8,7 +8,7 @@ const CONTACT_DETAILS = [
 ];
 
 const SOCIAL_LINKS = [
-  { platform: 'facebook', path: 'https://www.facebook.com/ElectricianforBristol' },
+  { platform: 'facebook', path: 'https://www.facebook.com/profile.php?id=61555863644767' },
   { platform: 'google', path: 'https://g.co/kgs/8yUWFXC' },
   //{ platform: 'instagram', path: 'https://instagram.com/ElectricianforBristol' },
 ];
