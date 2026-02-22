@@ -23,7 +23,6 @@ const CONTENT: Content = {
   about: [
     "Offering domestic electrical services for Bristol and surrounding areas. Since our beginnings in 2017, we have focused on delivering high-quality, long-lasting electrical installations—both on the surface and underneath. We design, install, and fault-find most aspects of electrical systems in the home, always using products that are rigorously tested for efficiency and durability.",
     "We aim to keep things as simple as possible for our clients and always endeavour to be helpful in any way we can. By building systems that are future-proof, we design around your long-term needs as well as your short-term ones. We take great pride in providing safe, reliable installations that are perfectly suited for their purpose, and we are always happy to find solutions should any problems arise.",
-    "Please feel free to get in touch via our 'Contact Us' section with any specific queries, and we will be happy to answer them for you.",
   ],
   trustPoints: [
     {
@@ -89,7 +88,7 @@ export default function Home() {
               className={styles.logoLink}
             >
               <Image 
-                src="/images/napit-logo.png" 
+                src="/images/napit.jpg" 
                 alt="Verify 82 Electrical NAPIT Registration" 
                 width={180} 
                 height={180} 
