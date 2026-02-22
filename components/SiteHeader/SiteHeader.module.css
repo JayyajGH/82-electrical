@@ -49,8 +49,20 @@
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 800;
-  color: #000;
+  color: var(--color);
   position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Light Mode Hover */
+.navLink:hover {
+  color: #555;
+}
+
+/* Dark Mode Hover */
+:global(.dark) .navLink:hover {
+  color: var(--amber);
+  text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
 }
 
 .active::after {
