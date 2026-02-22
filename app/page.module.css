@@ -8,6 +8,7 @@
 
 .sectionHeading {
   text-align: center;
+  margin-bottom: 2rem;
 
   &:before {
     content: url('/images/bolt.svg');
@@ -15,6 +16,47 @@
   }
 }
 
+/* Trust Section Layout */
+.trustSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
+}
+
+.trustTextContent {
+  flex: 1 1 450px;
+  text-align: left;
+}
+
+.trustPointWrapper {
+  margin-bottom: 2rem;
+}
+
+.napitLogoContainer {
+  flex: 0 1 200px;
+  display: flex;
+  justify-content: center;
+  min-width: 180px;
+}
+
+/* Specific class for the NAPIT logo image */
+.logoImage {
+  object-fit: contain;
+  width: auto;
+  height: auto;
+  max-width: 180px;
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
+  }
+}
+
+/* Services */
 .serviceList {
   display: flex;
   justify-content: space-around;
@@ -54,3 +96,4 @@
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
   }
 }
+
