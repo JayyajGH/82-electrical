@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px; /* Tightened logo spacing */
+  padding: 10px 0;
   
   @media (min-width: 768px) {
     justify-content: flex-start;
@@ -24,7 +24,7 @@
   @media (min-width: 768px) {  
     background: url('/images/logo-horizontal.png') no-repeat center / contain;
     min-width: 250px;
-    min-height: 110px;
+    min-height: 115px;
   }
 }
 
@@ -37,7 +37,7 @@
 .menuList {
   display: flex;
   margin: 0 auto;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
 
   @media (min-width: 768px) {
@@ -48,8 +48,8 @@
 .navLink {
   font-size: 1.2rem;
   text-decoration: none;
-  font-weight: 800; /* Visibility Fix */
-  color: #000;      /* Contrast Fix */
+  font-weight: 800;
+  color: #000;
   position: relative;
 }
 
@@ -68,4 +68,5 @@
   background-size: cover;
   background-position: center;
   min-height: 250px;
+  border-bottom: 6px solid var(--amber);
 }
