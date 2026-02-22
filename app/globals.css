@@ -9,7 +9,7 @@
   --bg-napit: #F8F9FA;
   --color: #1A1A1A;       
   --color-primary: #3E3E3E;
-  --bg-secondary: #D3D3D3;
+  --bg-secondary: #EDEDED;
 
   --brand-green: rgb(195, 212, 46); 
   --brand-green-tint: rgba(195, 212, 46, 0.05);
@@ -22,7 +22,7 @@
   --bg-napit: #1e1e1e;
   --color: #FFF;
   --color-primary: rgba(255, 255, 255, 0.87);
-  --bg-secondary: #3E3C3C;
+  --bg-secondary: #222222;
 }
 
 html {
