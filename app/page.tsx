@@ -55,7 +55,7 @@ const CONTENT: Content = {
 
 export default function Home() {
   return (
-    <main className="wrapper">
+    <main id="main" tabIndex={-1} className="wrapper">
       {/* About Section */}
       <section className="mb-12">
         <h2 className={`${styles.sectionHeading} heading1`}>About us</h2>

@@ -39,11 +39,27 @@ html {
   }
 }
 
-.uHiddenVisually {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px !important;
-  height: 1px !important;
+.uHiddenVisually:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
   overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* This makes the link visible and styled when someone tabs to it */
+.uHiddenVisually:focus {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background-color: var(--amber);
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
