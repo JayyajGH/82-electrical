@@ -37,6 +37,10 @@
   margin-bottom: 2rem;
 }
 
+.trustTitle {
+  margin-bottom: 0.5rem;
+}
+
 .napitLogoContainer {
   flex: 0 1 200px;
   display: flex;
@@ -44,13 +48,23 @@
   min-width: 180px;
 }
 
-/* Specific class for the NAPIT logo image */
+.logoLink {
+  display: flex;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.logoLink:hover {
+  opacity: 0.8;
+}
+
 .logoImage {
   object-fit: contain;
   width: auto;
   height: auto;
   max-width: 180px;
 
+  /* Ensures visibility in dark mode */
   @media (prefers-color-scheme: dark) {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
   }
@@ -96,4 +110,3 @@
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
   }
 }
-

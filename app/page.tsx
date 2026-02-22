@@ -1,5 +1,6 @@
 import styles from './page.module.css';
 import Image from "next/image";
+import Link from "next/link";
 
 interface TrustPoint {
   title: string;
@@ -74,20 +75,27 @@ export default function Home() {
           <div className={styles.trustTextContent}>
             {CONTENT.trustPoints.map((point, index) => (
               <div key={index} className={styles.trustPointWrapper}>
-                <h3 className="heading3" style={{ marginBottom: '0.5rem' }}>{point.title}</h3>
+                <h3 className={`${styles.trustTitle} heading3`}>{point.title}</h3>
                 <p className={styles.aboutText}>{point.text}</p>
               </div>
             ))}
           </div>
 
           <div className={styles.napitLogoContainer}>
-            <Image 
-              src="/images/napit.jpg" 
-              alt="NAPIT Full Scope Part P Registered Electrician" 
-              width={180} 
-              height={180} 
-              className={styles.logoImage} 
-            />
+            <Link 
+              href="https://search.napit.org.uk/member/51658/andrew-varma-t-a-82-electrical" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.logoLink}
+            >
+              <Image 
+                src="/images/napit-logo.png" 
+                alt="Verify 82 Electrical NAPIT Registration" 
+                width={180} 
+                height={180} 
+                className={styles.logoImage} 
+              />
+            </Link>
           </div>
         </div>
       </section>
