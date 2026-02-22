@@ -8,59 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 5px;
+  padding: 5px; /* Tightened logo spacing */
   
   @media (min-width: 768px) {
-    gap: 150px;
     justify-content: flex-start;
   }
 }
 
-.hero {
-  position: relative;
-  background-image: url('/images/masthead.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  /* Smoothly transition the brightness filter */
-  transition: filter 0.3s ease;
-
-  @media (min-width: 768px) {
-    min-height: 300px;
-    background-image: url('/images/masthead-large.jpg');
-  }
-
-  :global(.dark) & {
-    filter: brightness(0.7) contrast(1.1);
-  }
-}
-
-.heroTitle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
-  color: var(--white);
-  font-size: clamp(2rem, 8vw, 5rem);
-}
-
-.siteNav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  background-color: var(--bg-secondary);
-  transition: background-color 0.3s ease;
-}
-
-.logoLink {
-  display: inline-flex;
-}
-
 .logoImage {
-  border-radius: 3px;
+  display: block;
   background: url('/images/logo.png') no-repeat center / contain;
   min-width: 175px;
   min-height: 80px;
@@ -68,8 +24,14 @@
   @media (min-width: 768px) {  
     background: url('/images/logo-horizontal.png') no-repeat center / contain;
     min-width: 250px;
-    min-height: 115px;
+    min-height: 110px;
   }
+}
+
+.siteNav {
+  display: flex;
+  background-color: var(--bg-secondary);
+  padding: 0.5rem 1rem;
 }
 
 .menuList {
@@ -84,26 +46,26 @@
 }
 
 .navLink {
-  font-size: 1.3rem;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
   text-decoration: none;
-  color: var(--color);
-
-  @media (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-
-  &:hover {
-    color: var(--black);
-    
-    :global(.dark) & {
-      color: var(--bg-tertiary);
-    }
-  }
+  font-weight: 800; /* Visibility Fix */
+  color: #000;      /* Contrast Fix */
+  position: relative;
 }
 
-.skipLink:focus {
-  position: static;
-  width: auto;
-  height: auto;
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--amber);
+}
+
+.hero {
+  background-image: url('/images/masthead-large.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
 }

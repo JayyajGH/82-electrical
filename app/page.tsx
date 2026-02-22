@@ -22,7 +22,7 @@ interface Content {
 const CONTENT: Content = {
   about: [
     "Offering domestic electrical services for Bristol and surrounding areas. Since our beginnings in 2017, we have focused on delivering high-quality, long-lasting electrical installations—both on the surface and underneath. We design, install, and fault-find most aspects of electrical systems in the home, always using products that are rigorously tested for efficiency and durability.",
-    "We aim to keep things as simple as possible for our clients and always endeavour to be helpful in any way we can. By building systems that are future-proof, we design around your long-term needs as well as your short-term ones. We take great pride in providing safe, reliable installations that are perfectly suited for their purpose, and we are always happy to find solutions should any problems arise.",
+    "By building systems that are future-proof, we design around your long-term needs as well as your short-term ones. We take great pride in providing safe, reliable installations that are perfectly suited for their purpose, and we are always happy to find solutions should any problems arise.",
   ],
   trustPoints: [
     {
@@ -59,7 +59,7 @@ export default function Home() {
       {/* About Section */}
       <section className="mb-12">
         <h2 className={`${styles.sectionHeading} heading1`}>About us</h2>
-        <div className={styles.centeredText}>
+        <div className={styles.aboutContainer}>
           {CONTENT.about.map((paragraph, index) => (
             <p key={index} className={styles.aboutText}>{paragraph}</p>
           ))}
@@ -74,8 +74,8 @@ export default function Home() {
           <div className={styles.trustTextContent}>
             {CONTENT.trustPoints.map((point, index) => (
               <div key={index} className={styles.trustPointWrapper}>
-                <h3 className={`${styles.trustTitle} heading3`}>{point.title}</h3>
-                <p className={styles.aboutText}>{point.text}</p>
+                <h3 className={styles.trustTitle}>{point.title}</h3>
+                <p className={styles.trustDescription}>{point.text}</p>
               </div>
             ))}
           </div>
@@ -90,8 +90,8 @@ export default function Home() {
               <Image 
                 src="/images/napit.jpg" 
                 alt="Verify 82 Electrical NAPIT Registration" 
-                width={180} 
-                height={180} 
+                width={140} 
+                height={140} 
                 className={styles.logoImage} 
               />
             </Link>

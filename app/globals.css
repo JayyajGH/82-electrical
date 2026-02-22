@@ -4,36 +4,27 @@
 :root {
   --white: #FFF;
   --black: #000;
+  --amber: #fbbf24;
 
   --bg: #FFF;
   --bg-secondary: #D3D3D3;
-  --bg-tertiary:  #D3D3D3;
-  --color: #70686b;
+  --bg-napit: #F8F9FA;
+  --color: #1A1A1A;       
   --color-primary: #3E3E3E;
 }
 
 .dark {
   --bg: #121212;
   --bg-secondary: #3E3C3C;
-  --bg-tertiary: #70686b;
+  --bg-napit: #1e1e1e;
   --color: #FFF;
   --color-primary: rgba(255, 255, 255, 0.87);
 }
 
-/*
- Add theme into tailwind
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-*/
-
- html {
+html {
   background-color: var(--bg);
   color: var(--color);
- }
+}
 
 .wrapper {
   max-width: 900px;
@@ -48,9 +39,6 @@
   }
 }
 
-
-/* NB: This will be hidden from view but still be available to screenreaders
- http://webaim.org/techniques/css/invisiblecontent/ */
 .uHiddenVisually {
   position: absolute;
   left: -10000px;

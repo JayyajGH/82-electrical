@@ -1,81 +1,83 @@
-.centeredText {
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+
+.sectionHeading:before {
+  content: url('/images/bolt.svg');
+  padding-right: 10px;
+}
+
+.aboutContainer {
+  max-width: 700px; 
+  margin: 0 auto;
   text-align: center;
 }
 
 .aboutText {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-size: 1.15rem;
 }
 
-.sectionHeading {
-  text-align: center;
-  margin-bottom: 2rem;
-
-  &:before {
-    content: url('/images/bolt.svg');
-    padding-right: 10px;
-  }
-}
-
-/* Trust Section Layout */
 .trustSection {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto 4rem auto;
-  padding: 0 1rem;
+  background-color: var(--bg-napit);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #EDEDED;
 }
 
 .trustTextContent {
-  flex: 1 1 450px;
+  flex: 1 1 350px;
   text-align: left;
 }
 
 .trustPointWrapper {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+
+.trustPointWrapper:last-child {
+  margin-bottom: 0;
 }
 
 .trustTitle {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.trustDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .napitLogoContainer {
-  flex: 0 1 200px;
+  flex: 0 0 140px;
   display: flex;
   justify-content: center;
-  min-width: 180px;
-}
-
-.logoLink {
-  display: flex;
-  transition: opacity 0.2s ease;
-  cursor: pointer;
-}
-
-.logoLink:hover {
-  opacity: 0.8;
 }
 
 .logoImage {
-  object-fit: contain;
-  width: auto;
+  max-width: 130px;
   height: auto;
-  max-width: 180px;
-
-  /* Ensures visibility in dark mode */
-  @media (prefers-color-scheme: dark) {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
-  }
 }
 
-/* Services */
 .serviceList {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+  padding: 0;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -84,29 +86,24 @@
 }
 
 .serviceItem {
-  width: 200px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.iconHeading {
-  margin-bottom: 20px;
-}
-
-.iconText {
-  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .itemIcon {
   width: 75px;
   margin-bottom: 20px;
+  @media (min-width: 768px) { width: 100px; }
+}
 
-  @media (min-width: 768px) {
-    width: 100px;
-  }
+.iconHeading {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  @media (prefers-color-scheme: dark) {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(142deg) brightness(106%) contrast(105%);
-  }
+.iconText {
+  text-align: center;
 }
