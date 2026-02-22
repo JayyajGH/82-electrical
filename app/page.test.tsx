@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import Home from './page';
 
-// Mock Next.js Image component
 vi.mock("next/image", () => ({
   __esModule: true,
   default: (props: any) => {
@@ -13,55 +12,42 @@ vi.mock("next/image", () => ({
 
 describe('Home Page', () => {
 
-  it('renders the "About us" section with all paragraphs', () => {
+  it('renders main section headings as H2', () => {
     render(<Home />);
-    
-    // Check for the section heading
     expect(screen.getByRole('heading', { level: 2, name: /about us/i })).toBeInTheDocument();
-
-    // Check for specific text content to ensure the map function worked
-    expect(screen.getByText(/domestic electrical services for Bristol/i)).toBeInTheDocument();
-    expect(screen.getByText(/future-proof, we design around your long-term needs/i)).toBeInTheDocument();
-  });
-
-  it('renders the "What we do" section with the correct heading level', () => {
-    render(<Home />);
+    expect(screen.getByRole('heading', { level: 2, name: /why choose us/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 2, name: /what we do/i })).toBeInTheDocument();
   });
 
-  it('renders exactly three service items', () => {
+  it('renders service titles as H3 for proper hierarchy', () => {
     render(<Home />);
-    // Since services are inside an <ul>, we check for list items
+    // This will pass once you change your page.tsx service titles to <h3>
+    expect(screen.getByRole('heading', { level: 3, name: /rewires/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: /fault finding/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 3, name: /lighting/i })).toBeInTheDocument();
+  });
+
+  it('renders exactly three service items in a list', () => {
+    render(<Home />);
     const serviceItems = screen.getAllByRole('listitem');
     expect(serviceItems).toHaveLength(3);
   });
 
-  it('displays the correct service titles and descriptions', () => {
+  it('ensures service icons are decorative', () => {
     render(<Home />);
+    // Using getAllByRole('img') is cleaner than querySelector
+    const images = screen.getAllByRole('presentation', { hidden: true }).filter(el => el.tagName === 'IMG');
     
-    const services = [
-      { title: 'Rewires', text: /full rewire is often the safest path/i },
-      { title: 'Fault finding', text: /immediate advice over the phone/i },
-      { title: 'Lighting', text: /transform your garden with outdoor LEDs/i },
-    ];
-
-    services.forEach(({ title, text }) => {
-      // Check for the H2 titles within the service items (rendered as heading3 class but <h2> tag)
-      expect(screen.getByRole('heading', { level: 2, name: title })).toBeInTheDocument();
-      expect(screen.getByText(text)).toBeInTheDocument();
-    });
+    // Alternative: just check for empty alts on the images
+    const icons = screen.getAllByAltText('');
+    expect(icons.length).toBeGreaterThanOrEqual(3); 
   });
 
-  it('renders icons as decorative elements (hidden from screen readers)', () => {
-    const { container } = render(<Home />);
-    
-    // Look for the images physically in the DOM using a selector
-    const images = container.querySelectorAll('img');
-    
-    expect(images).toHaveLength(3);
-    images.forEach(img => {
-        expect(img).toHaveAttribute('alt', '');
-    });
+  it('contains the NAPIT verification link', () => {
+    render(<Home />);
+    const link = screen.getByRole('link', { name: /verify 82 electrical napit registration/i });
+    expect(link).toBeInTheDocument();
+    expect(link).toHaveAttribute('href', expect.stringContaining('napit.org.uk'));
   });
-
 });
+

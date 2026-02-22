@@ -112,7 +112,7 @@ export default function Home() {
                 width={200}
                 height={200}
               />
-              <h2 className={`${styles.iconHeading} heading3`}>{service.title}</h2>
+              <h3 className={`${styles.iconHeading} heading3`}>{service.title}</h3>
               <p className={styles.iconText}>{service.text}</p>
             </li>
           ))}
