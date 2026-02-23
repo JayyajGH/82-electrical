@@ -14,6 +14,16 @@ const ptSans = PT_Sans({
 export const metadata: Metadata = {
   title: "82 Electrical",
   description: "82 Electrical - Domestic electrician serving Bristol and the surrounding areas",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/android-icon-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-ico.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
