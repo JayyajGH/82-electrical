@@ -31,7 +31,6 @@ export default function SiteFooter({}: SiteFooterProps) {
                   <a 
                     className={styles.contactLink} 
                     href={item.href}
-                    aria-label={item.aria}
                     {...(item.external && { target: '_blank', rel: 'noopener noreferrer' })}
                   >
                     {item.label}
