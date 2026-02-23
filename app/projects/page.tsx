@@ -61,14 +61,12 @@ export default function Projects() {
 
             {/* Text Content Under Image */}
             <div className="mt-4 px-1">
-              <div className="mt-4 px-1">
-                <h3 className="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full">
-                  {slide.title}
-                </h3>
-                <p className="small-text text-[var(--color-primary)] mt-1 leading-relaxed">
-                  {slide.description}
-                </p>
-              </div>
+              <h3 className="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full">
+                {slide.title}
+              </h3>
+              <p className="small-text text-[var(--color-primary)] mt-1 leading-relaxed">
+                {slide.description}
+              </p>
             </div>
             
           </div>
