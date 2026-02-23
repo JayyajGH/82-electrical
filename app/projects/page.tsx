@@ -26,7 +26,7 @@ export default function Projects() {
       description: "Modern fuse boxes contain lots of safety features that not only improve the safety in your home limiting the chance of an electrical fire or shocks but can also help protect expensive electrical equipment from both minor and major electrical surges. Look out for metal enclosures, RCBOs, SPDs (all now fitted as standard) and more recently Arc fault detection on any quote that you get." 
     },
     { 
-      src: "/images/projects/newkitchen_1.jpg", 
+      src: "/images/projects/new-kitchen.jpg", 
       width: 1920, 
       height: 1280, 
       title: "Kitchen Wiring", 
