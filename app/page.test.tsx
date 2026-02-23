@@ -21,7 +21,6 @@ describe('Home Page', () => {
 
   it('renders service titles as H3 for proper hierarchy', () => {
     render(<Home />);
-    // This will pass once you change your page.tsx service titles to <h3>
     expect(screen.getByRole('heading', { level: 3, name: /rewires/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: /fault finding/i })).toBeInTheDocument();
     expect(screen.getByRole('heading', { level: 3, name: /lighting/i })).toBeInTheDocument();
@@ -35,12 +34,17 @@ describe('Home Page', () => {
 
   it('ensures service icons are decorative', () => {
     render(<Home />);
-    // Using getAllByRole('img') is cleaner than querySelector
-    const images = screen.getAllByRole('presentation', { hidden: true }).filter(el => el.tagName === 'IMG');
     
-    // Alternative: just check for empty alts on the images
-    const icons = screen.getAllByAltText('');
-    expect(icons.length).toBeGreaterThanOrEqual(3); 
+    // Check for images with empty alt text. 
+    // This is the semantic way to mark icons as decorative.
+    const decorativeIcons = screen.getAllByAltText('');
+    
+    // We expect at least 3 (one for each service item)
+    expect(decorativeIcons.length).toBeGreaterThanOrEqual(3); 
+
+    decorativeIcons.forEach(icon => {
+      expect(icon.tagName).toBe('IMG');
+    });
   });
 
   it('contains the NAPIT verification link', () => {
@@ -50,4 +54,3 @@ describe('Home Page', () => {
     expect(link).toHaveAttribute('href', expect.stringContaining('napit.org.uk'));
   });
 });
-
