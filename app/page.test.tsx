@@ -1,12 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
+import { ImageProps } from 'next/image';
 import Home from './page';
 
 vi.mock("next/image", () => ({
   __esModule: true,
-  default: (props: any) => {
+  default: ({ src, alt, ...props }: ImageProps) => {
     // eslint-disable-next-line @next/next/no-img-element
-    return <img {...props} alt={props.alt} />;
+    return <img 
+        src={typeof src === 'string' ? src : undefined} 
+        alt={alt} 
+        {...props} 
+      />;
   },
 }));
 
