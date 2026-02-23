@@ -5,7 +5,7 @@ import Projects from './page';
 import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
 // Since Projects doesn't take props yet, we use an empty object.
-class ProjectsFactory extends ComponentFactory<{}> {
+class ProjectsFactory extends ComponentFactory<Record<string, never>> {
   protected component = Projects;
   constructor() {
     super({});

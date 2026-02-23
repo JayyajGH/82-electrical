@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 import Contact from './page';
 import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
-class ContactFactory extends ComponentFactory<{}> {
+class ContactFactory extends ComponentFactory<Record<string, never>> {
   protected component = Contact;
 
   constructor() {
