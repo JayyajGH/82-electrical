@@ -3,7 +3,7 @@ import SocialIcon from './SocialIcon';
 
 const CONTACT_DETAILS = [
   { label: 'andrew@82electrical.co.uk', href: 'mailto:andrew@82electrical.co.uk' },
-  { label: '07813 408135', href: 'tel:+447813408135', aria: 'Phone us on 0 7 8 1 3. 4 0 8. 1 3 5' },
+  { label: '07813 408135', href: 'tel:+447813408135' },
   { label: 'Ambleside Avenue, Bristol BS10', href: 'https://goo.gl/maps/w1DEYMjpH37A4bV96', external: true },
 ];
 
