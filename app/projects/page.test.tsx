@@ -1,5 +1,6 @@
 import { screen, fireEvent } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
+import { ImageProps } from 'next/image';
 import Projects from './page';
 import { ComponentFactory } from '../../test/__factories__/ComponentFactory';
 
@@ -15,9 +16,11 @@ const factory = new ProjectsFactory();
 
 // Mocking Next.js Image since it can be tricky in unit tests
 vi.mock('next/image', () => ({
-  default: ({ src, alt, fill }: any) => (
-    <img src={src} alt={alt} data-fill={fill?.toString()} />
-  ),
+  __esModule: true,
+  default: ({ src, alt, fill, ...props }: ImageProps) => {
+    // eslint-disable-next-line @next/next/no-img-element
+    return <img src={typeof src === 'string' ? src : undefined} alt={alt} data-fill={fill?.toString()} {...props} />;
+  },
 }));
 
 // Mocking the Lightbox to simplify the DOM tree

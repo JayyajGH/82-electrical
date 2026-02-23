@@ -21,6 +21,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Fault Finding"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/faultfind_1.jpg"
           />
@@ -48,6 +49,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Fuse boxes"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/image1.jpg"
           />
@@ -75,6 +77,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Kitchen Wiring"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/new-kitchen.jpg"
           />
@@ -102,6 +105,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Circuit Testing"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/testing-circuits.jpg"
           />
@@ -129,6 +133,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Garden Lighting"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/garden-steps.jpg"
           />
@@ -156,6 +161,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Brick Lights"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/brick-lights.jpg"
           />
@@ -183,6 +189,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Domestic Work"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/large-or-small.jpg"
           />
@@ -210,6 +217,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Stylish Lighting"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/stylish-lighting.jpg"
           />
@@ -237,6 +245,7 @@ exports[`Projects Component > matches snapshot 1`] = `
         >
           <img
             alt="Smart Home"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/smart-lighting-and-sound.jpg"
           />
