@@ -14,7 +14,7 @@ const SOCIAL_LINKS = [
 ];
 
 // Define an empty interface for now
-export interface SiteFooterProps {}
+export type SiteFooterProps = Record<string, never>;
 
 export default function SiteFooter({}: SiteFooterProps) {
   return (
