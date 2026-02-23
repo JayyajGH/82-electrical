@@ -1,0 +1,262 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Projects Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <h1
+      class="heading1"
+    >
+      Previous work
+    </h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10"
+    >
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Fault Finding"
+            data-fill="true"
+            src="/images/projects/faultfind_1.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Fault Finding
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            This fault was found after the customer called to say his RCD had been tripping at certain times of day. After opening up the consumer unit it was clear that the cable supplying his hot water cylinder and not been secured in the circuit breaker correctly when it was installed causing it to overheat and melt into nearby circuits.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Fuse boxes"
+            data-fill="true"
+            src="/images/projects/image1.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Fuse boxes
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            Modern fuse boxes contain lots of safety features that not only improve the safety in your home limiting the chance of an electrical fire or shocks but can also help protect expensive electrical equipment from both minor and major electrical surges. Look out for metal enclosures, RCBOs, SPDs (all now fitted as standard) and more recently Arc fault detection on any quote that you get.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Kitchen Wiring"
+            data-fill="true"
+            src="/images/projects/new-kitchen.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Kitchen Wiring
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            If you are spending all that money on a new kitchen don't forget to get an electrician to thoroughly check the electrical system, those cables often can't be replaced without damaging the brand new tiles or freshly painted walls.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Circuit Testing"
+            data-fill="true"
+            src="/images/projects/testing-circuits.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Circuit Testing
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            Always testing circuits following installation or modification with specially calibrated test equipment.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Garden Lighting"
+            data-fill="true"
+            src="/images/projects/garden-steps.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Garden Lighting
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            The customer here wanted to illuminate her new garden steps, so we put in aluminium channels with waterproof 12v led strip, so light would spill out of each top slab.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Brick Lights"
+            data-fill="true"
+            src="/images/projects/brick-lights.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Brick Lights
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            Installed these bricklights so they blend into a new garden wall and help the customer to see where his steps are.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Domestic Work"
+            data-fill="true"
+            src="/images/projects/large-or-small.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Domestic Work
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            As happy doing the little jobs like installing outdoor sockets, swapping lights or changing bathroom fans as I am the big jobs.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Stylish Lighting"
+            data-fill="true"
+            src="/images/projects/stylish-lighting.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Stylish Lighting
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            Stylish interior lighting is not so difficult to achieve. This install was a late addition and cables were put in after plastering, channels were filled by us and finished off to perfection by the decorator.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
+            alt="Smart Home"
+            data-fill="true"
+            src="/images/projects/smart-lighting-and-sound.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Smart Home
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            Rewire of this kitchen included Phillips Hue lighting and Sonos speakers throughout. A stunning custom built kitchen with all isolators neatly concealed in cupboards.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

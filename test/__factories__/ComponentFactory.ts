@@ -1,22 +1,20 @@
+import React from 'react';
 import { render, RenderResult } from '@testing-library/react';
-import { ReactElement } from 'react';
 
 export type ComponentFactoryOptions<P> = {
     props?: Partial<P>;
-    attrs?: Record<string, any>; // For data-testids or aria-labels
+    attrs?: Record<string, any>; 
 };
 
 export abstract class ComponentFactory<P extends Record<string, any>> {
-    protected abstract component: (props: P) => ReactElement;
+    // 1. Correct the type to a React Component instead of a raw function
+    protected abstract component: React.ComponentType<P>;
     protected defaultProps: P;
 
     constructor(defaultProps: P) {
         this.defaultProps = defaultProps;
     }
 
-    /**
-     * Creates the props by merging defaults with overrides
-     */
     private createProps(overrides: Partial<P> = {}): P {
         return {
             ...this.defaultProps,
@@ -25,24 +23,24 @@ export abstract class ComponentFactory<P extends Record<string, any>> {
     }
 
     /**
-     * Renders the component for Vitest/Testing Library
+     * Renders the component correctly using React's engine
      */
     render(options: ComponentFactoryOptions<P> = {}): RenderResult {
         const props = this.createProps(options.props);
-        return render(this.component(props));
+
+        return render(
+            React.createElement(this.component, {
+                ...props,
+                ...options.attrs,
+            })
+        );
     }
 
-    /**
-     * Renders the component and returns the DocumentFragment for snapshot testing
-     */
     snapshot(options: ComponentFactoryOptions<P> = {}): DocumentFragment {
         const { asFragment } = this.render(options);
         return asFragment();
     }
     
-    /**
-     * Just returns the props object (useful for unit testing hooks/logic)
-     */
     getProps(overrides: Partial<P> = {}): P {
         return this.createProps(overrides);
     }
