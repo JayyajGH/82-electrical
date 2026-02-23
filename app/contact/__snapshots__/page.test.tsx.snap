@@ -1,0 +1,60 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact Page Component > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="_contactContainer_30c862"
+    >
+      <h2
+        class="heading1"
+      >
+        Contact Us
+      </h2>
+      <div
+        class="_contactItem_30c862"
+      >
+        <a
+          class="_contactLink_30c862 _emailLink_30c862"
+          href="mailto:andrew@82electrical.co.uk"
+        >
+          andrew@82electrical.co.uk
+        </a>
+      </div>
+      <div
+        class="_contactItem_30c862"
+      >
+        <a
+          class="_contactLink_30c862 _phoneLink_30c862"
+          href="tel:+447813408135"
+        >
+          07813 408135
+        </a>
+      </div>
+      <div
+        class="_contactItem_30c862"
+      >
+        <a
+          class="_contactLink_30c862 _addressLink_30c862"
+          href="https://goo.gl/maps/w1DEYMjpH37A4bV96"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Ambleside Avenue, Bristol BS10
+        </a>
+      </div>
+      <iframe
+        allowfullscreen=""
+        class="_coverageMap_30c862"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d318417.5185058974!2d-2.783116!3d51.428097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3c8324a225142f6!2s82%20electrical!5e0!3m2!1sen!2suk!4v1664028702117!5m2!1sen!2suk"
+        style="border: 0px;"
+        title="Coverage Area Map"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

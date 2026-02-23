@@ -20,8 +20,7 @@ export default function Contact() {
         <div className={styles.contactItem}>
           <a 
             className={`${styles.contactLink} ${styles.phoneLink}`} 
-            href="tel:+447813408135" 
-            aria-label="Phone us on 0 7 8 1 3. 4 0 8. 1 3 5"
+            href="tel:+447813408135"
           >
             07813 408135
           </a>
