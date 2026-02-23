@@ -7,7 +7,6 @@ export type ComponentFactoryOptions<P> = {
 };
 
 export abstract class ComponentFactory<P extends Record<string, any>> {
-    // 1. Correct the type to a React Component instead of a raw function
     protected abstract component: React.ComponentType<P>;
     protected defaultProps: P;
 
@@ -22,9 +21,6 @@ export abstract class ComponentFactory<P extends Record<string, any>> {
         };
     }
 
-    /**
-     * Renders the component correctly using React's engine
-     */
     render(options: ComponentFactoryOptions<P> = {}): RenderResult {
         const props = this.createProps(options.props);
 
