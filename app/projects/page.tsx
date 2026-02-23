@@ -61,10 +61,10 @@ export default function Projects() {
 
             {/* Text Content Under Image */}
             <div className="mt-4 px-1">
-              <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+              <h3 className="heading3 group-hover:text-[var(--brand-green)] transition-colors">
                 {slide.title}
               </h3>
-              <p className="text-sm text-gray-500 mt-1 leading-relaxed">
+              <p className="small-text text-[var(--color-primary)] mt-1 leading-relaxed">
                 {slide.description}
               </p>
             </div>
