@@ -23,9 +23,16 @@ vi.mock('next/image', () => ({
   },
 }));
 
+// Define an interface for the lightbox props
+interface LightboxMockProps {
+  open: boolean;
+  close: () => void;
+  index: number;
+}
+
 // Mocking the Lightbox to simplify the DOM tree
 vi.mock('yet-another-react-lightbox', () => ({
-  default: ({ open, close, index }: any) => 
+  default: ({ open, close, index }: LightboxMockProps) => 
     open ? (
       <div data-testid="lightbox" data-index={index}>
         <button onClick={close}>Close</button>
