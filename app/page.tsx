@@ -89,7 +89,7 @@ export default function Home() {
             >
               <Image 
                 src="/images/napit.jpg" 
-                alt="Verify 82 Electrical NAPIT Registration" 
+                alt="Verify 82electrical NAPIT Registration" 
                 width={140} 
                 height={140} 
                 className={styles.logoImage} 

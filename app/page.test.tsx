@@ -54,7 +54,7 @@ describe('Home Page', () => {
 
   it('contains the NAPIT verification link', () => {
     render(<Home />);
-    const link = screen.getByRole('link', { name: /verify 82 electrical napit registration/i });
+    const link = screen.getByRole('link', { name: /verify 82electrical napit registration/i });
     expect(link).toBeInTheDocument();
     expect(link).toHaveAttribute('href', expect.stringContaining('napit.org.uk'));
   });

@@ -75,7 +75,7 @@ exports[`SiteFooter Component > matches the visual structure via snapshot 1`] = 
                 href="https://www.facebook.com/profile.php?id=61555863644767"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="82Electrical on facebook"
+                title="82electrical on facebook"
               />
             </li>
             <li>
@@ -85,7 +85,7 @@ exports[`SiteFooter Component > matches the visual structure via snapshot 1`] = 
                 href="https://g.co/kgs/8yUWFXC"
                 rel="noopener noreferrer"
                 target="_blank"
-                title="82Electrical on google"
+                title="82electrical on google"
               />
             </li>
           </ul>

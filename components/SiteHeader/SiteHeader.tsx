@@ -15,10 +15,10 @@ export default function SiteHeader() {
 
       <div className={styles.headerWrapper}>
         <div className={styles.navContainer}>
-          <Link href="/" title="82Electrical" className={styles.logoLink}>
+          <Link href="/" title="82electrical" className={styles.logoLink}>
             <span 
               className={`${styles.logoImage} uPaddingSmall`} 
-              aria-label="82Electrical"
+              aria-label="82electrical"
             ></span>
           </Link>
         </div>

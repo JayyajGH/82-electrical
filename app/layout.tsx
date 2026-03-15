@@ -12,8 +12,8 @@ const ptSans = PT_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "82 Electrical",
-  description: "82 Electrical - Domestic electrician serving Bristol and the surrounding areas",
+  title: "82electrical",
+  description: "82electrical - Domestic electrician serving Bristol and the surrounding areas",
   icons: {
     icon: [
       { url: '/favicon.ico' },

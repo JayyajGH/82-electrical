@@ -7,7 +7,7 @@ export default function SocialIcon({ platform, path }: { platform: string, path:
         target="_blank" 
         rel="noopener noreferrer" 
         className={`${styles.socialIcon} ${styles[platform]}`}
-        title={`82Electrical on ${platform}`}
+        title={`82electrical on ${platform}`}
         aria-label={platform}
     />
   );
