@@ -20,6 +20,34 @@ exports[`Projects Component > matches snapshot 1`] = `
           class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
         >
           <img
+            alt="Kitchen Rewires"
+            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+            data-fill="true"
+            src="/images/projects/new-kitchen.jpg"
+          />
+        </div>
+        <div
+          class="mt-4 px-1"
+        >
+          <h3
+            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
+          >
+            Kitchen Rewires
+          </h3>
+          <p
+            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
+          >
+            If you are spending all that money on a new kitchen don't forget to get an electrician to thoroughly check the electrical system, those cables often can't be replaced without damaging the brand new tiles or freshly painted walls.
+          </p>
+        </div>
+      </div>
+      <div
+        class="group flex flex-col cursor-pointer"
+      >
+        <div
+          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
+        >
+          <img
             alt="Fault Finding"
             class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
@@ -48,7 +76,7 @@ exports[`Projects Component > matches snapshot 1`] = `
           class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
         >
           <img
-            alt="Fuse boxes"
+            alt="Consumer Unit Replacement"
             class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/image1.jpg"
@@ -60,7 +88,7 @@ exports[`Projects Component > matches snapshot 1`] = `
           <h3
             class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
           >
-            Fuse boxes
+            Consumer Unit Replacement
           </h3>
           <p
             class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
@@ -76,35 +104,7 @@ exports[`Projects Component > matches snapshot 1`] = `
           class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
         >
           <img
-            alt="Kitchen Wiring"
-            class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-            data-fill="true"
-            src="/images/projects/new-kitchen.jpg"
-          />
-        </div>
-        <div
-          class="mt-4 px-1"
-        >
-          <h3
-            class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
-          >
-            Kitchen Wiring
-          </h3>
-          <p
-            class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
-          >
-            If you are spending all that money on a new kitchen don't forget to get an electrician to thoroughly check the electrical system, those cables often can't be replaced without damaging the brand new tiles or freshly painted walls.
-          </p>
-        </div>
-      </div>
-      <div
-        class="group flex flex-col cursor-pointer"
-      >
-        <div
-          class="relative h-64 w-full overflow-hidden rounded-xl border border-gray-200"
-        >
-          <img
-            alt="Circuit Testing"
+            alt="Circuit Testing and EICRs"
             class="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
             data-fill="true"
             src="/images/projects/testing-circuits.jpg"
@@ -116,7 +116,7 @@ exports[`Projects Component > matches snapshot 1`] = `
           <h3
             class="heading3 inline-block relative after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-[var(--brand-green)] after:transition-all group-hover:after:w-full"
           >
-            Circuit Testing
+            Circuit Testing and EICRs
           </h3>
           <p
             class="small-text text-[var(--color-primary)] mt-1 leading-relaxed"
