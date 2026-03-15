@@ -62,7 +62,7 @@ describe('Projects Component', () => {
     factory.render();
 
     // Find the first project card and click it
-    const firstProject = screen.getByText('Fault Finding').closest('.group');
+    const firstProject = screen.getByText('Kitchen Rewires').closest('.group');
     fireEvent.click(firstProject!);
 
     // Check if our mocked lightbox appeared
