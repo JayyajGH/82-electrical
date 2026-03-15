@@ -26,6 +26,25 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "82electrical",
+  "url": "https://82electrical.co.uk/",
+  "telephone": "+447813408135",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Greater Bristol & surrounding areas"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ambleside Avenue",
+    "addressLocality": "Bristol",
+    "postalCode": "BS10",
+    "addressCountry": "GB"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +53,15 @@ export default function RootLayout({
   return (
     // suppressHydrationWarning is required on <html> when using next-themes
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+      </head>
+
       <body className={`${ptSans.variable} ${ptSans.className} antialiased`}>
         <ThemeProvider
           attribute="class"
