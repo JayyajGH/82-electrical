@@ -88,7 +88,7 @@ export default function Projects() {
                 src={slide.src}
                 alt={slide.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                className="object-cover motion-safe:group-hover:scale-105 transition-transform duration-500 ease-in-out"
               />
             </div>
 
