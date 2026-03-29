@@ -37,6 +37,7 @@ body {
 @media (min-width: 768px) {
   .heading3 {
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
 }
 
