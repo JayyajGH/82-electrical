@@ -23,7 +23,7 @@ export default function SiteFooter({}: SiteFooterProps) {
         
         {/* Contact Information */}
         <div className={styles.contactSection}>
-          <h2 className={`${styles.heading} heading2`}>Contact Us</h2>
+          <h2 className={`${styles.heading} heading3`}>Contact Us</h2>
           <address>
             <ul className="listReset">
               {CONTACT_DETAILS.map((item) => (
@@ -43,7 +43,7 @@ export default function SiteFooter({}: SiteFooterProps) {
 
         {/* Social Media Links */}
         <div className={styles.socialSection}>
-          <h2 className={`${styles.heading} heading2`}>Social</h2>
+          <h2 className={`${styles.heading} heading3`}>Follow Us</h2>
           <address>
             <ul className={styles.socialList}>
               {SOCIAL_LINKS.map((social) => (
